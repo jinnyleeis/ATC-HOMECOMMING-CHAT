@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <title>채팅</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/client.js"></script>
+  </head>
+  <body>
+    <div class="background-image">
+    <div id="main">
+      <p>
+        <br>
+        #홈커밍에 오신것을 환영합니다#자유롭게 채팅을 남겨주세요
+        
+      </p>
+
+      <style>
+        .button {
+          background-color:#e8e8e8 ;
+      color:white;
+          border: none;
+          
+          padding: 12px 45px;
+          text-align: center;
+         
+          display: inline-block;
+          font-size: 30px;
+          margin: 0px  0px  10px 10px;
+          cursor: pointer;
+          
+        }
+        .button:hover {
+      background-color:white;
+      color:black;
+      transition: 0.7s;
+        }</style>
+
+      <div id="chat">
+      
+      
+      
+       <!---- chat message-->
+     
+      </div>
+      <div>
+      <input type="text" id="test" placeholder="아텍커의 채팅" style="font-size:55px; width:300px;text-align: center; margin:100px 20px 20px 20px">
+      <button class="button" onclick="send()" >SEND</button>
+
+    </div>
+    </div>
+   <!---- <h1 class='fade-in'>Fade me In, Scotty</h1>
+    <h1 class='fade-out'>Fade me Out, Scotty</h1><-->
+
+  </div>
+   
+  </body>
+</html>

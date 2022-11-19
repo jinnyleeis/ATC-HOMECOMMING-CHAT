@@ -1,0 +1,257 @@
+@font-face {
+  font-family: 'Abril Fatface';
+  /*font-family: 'SF_HambakSnow';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/SF_HambakSnow.woff') format('woff');*/
+  src: url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap') format('otf');
+  /*font-weight: normal; */
+  font-weight: 1000;
+  font-style: normal;
+  
+}
+
+* {
+  font-family: 'Abril Fatface', cursive;
+  
+
+
+/*font-family:F_HambakSnow';/*
+}
+
+.background-image{
+  background-image: url('https://i.ibb.co/r7WT2jv/bgimage.png');
+  background-size: cover;
+  background-repeat:no-repeat;
+  width: 800px;
+  height:1000px;
+  /*height: 1000vh;*/
+
+}
+
+
+.background-image{
+  /*background-image: url('https://i.ibb.co/r7WT2jv/bgimage.png');*/
+  background-image: url('https://i.ibb.co/Dbsn81b/bluegrid.jpg');
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 600px;
+  height: 900px;
+
+}
+
+.background-image0{
+  background-color: #FF5E5A;
+  width: 550px;
+  height: 900px;
+
+  /*background-image: url('https://i.ibb.co/bbvWm3b/homecoming.png');*/
+  background-size: contain;
+  
+  background-repeat: no-repeat;
+ 
+
+}
+
+.background-image2{
+  /*background-image: url('https://i.ibb.co/Dbsn81b/bluegrid.jpg');*/
+  background-color: #FF5E5A;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 550px;
+  height: 900px;
+ 
+  color: white;
+
+}
+
+
+.background-image3{
+  background-color:#ECECEC;
+
+  color: black;
+  
+  width: 550px;
+  height: 900px;
+
+  /*background-image: url('https://i.ibb.co/bbvWm3b/homecoming.png');*/
+  background-size: contain;
+  
+  background-repeat: no-repeat;
+ 
+
+}
+
+.logo-image{
+  background-image: url('https://i.ibb.co/h1c3XdC/logos.png');
+
+}
+.profile
+{
+  
+  box-sizing: border-box;
+
+position: absolute;
+width: 396px;
+height: 499px;
+left: 160px;
+top: 157px;
+
+background: #D9D9D9;
+border: 1px solid #000000;
+}
+
+/* 메인 */
+#main {
+  margin: auto;
+  margin-top: 0px;
+  border-radius: 0px;
+  font-size: 25px;
+  width: 550px;
+  height: 900px;
+  /*background-color: #FF5E5A;*/
+  text-align: center;
+  /*width: 800px;
+  height: 1000px;*/
+}
+
+/* 채팅 영역 */
+#chat {
+  height: 70%;
+  width: 50%;
+  overflow-y: auto;
+ 
+  
+}
+
+/* 접속 알림 */
+.connect {
+  width: 90%;
+  margin: auto;
+  background-color: #efebf3 ; 
+  text-align: center;
+ 
+  margin-top: 30px;
+  animation: fadeOut 15s forwards ;/*linear infinite;*/
+  /*animation: move 15s   forwards ;/*ease-in-out;/*infinite*/
+}
+
+/* 접속 종료 알림 */
+.disconnect {
+  width: 90%;
+  margin: auto;
+  background-color: #efebf3 ; 
+  text-align: center;
+  margin-top: 10px;
+  animation: fadeOut 15s forwards ;/*linear infinite;*/
+  /*animation: move 15s   forwards ;ease-in-out;/*infinite*/
+}
+
+/* 내가 보낸 메시지 
+.me {
+ / width: 90%;
+  margin: auto;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  margin-top: 10px;
+}*/
+
+/* 상대방이 보낸 메시지 */
+.other {
+  width: 80%;
+  height:7%;
+  /*margin: auto;*/
+  background-color: white;
+  border-radius: 15px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 20px;
+  animation: fadeOut 10s forwards ;/*linear infinite;*/
+  /*animation: move 60s   forwards ;/*ease-in-out;/*infinite*/
+  position : relative;
+  text-align: center;
+  
+}
+.other::after  {
+ content : "";
+  width: 0;
+  height:0 ;
+  border-top: 51px solid white;
+  border-right: 27px solid transparent;
+  border-left: 27px solid transparent;
+  top:30px;
+  
+  
+  
+  
+  
+  animation: fadeOut 60s forwards ;/*linear infinite;*/
+  /*animation: move 60s   forwards ;/*ease-in-out;/*infinite*/
+  position : absolute;
+}
+
+.fade-in {
+
+  animation: fadeIn 2s;
+/* animation will connect up to the keyframe *- 키프레임과의 연결*/
+}
+
+.fade-out {
+
+  animation: fadeOut 2s infinite alternate;
+/* animation will connect up to the keyframe *- 키프레임과의 연결*/
+}
+
+.mover {
+  width: 50px;
+  height: 50px;
+  background: #f06d06;
+  border-radius: 50%;
+  animation: move 5s /*infinite ease-in-out;*/
+}
+
+
+@keyframes fadeIn {
+/* identifier */
+
+from {
+
+  opacity: 0;
+}
+
+to{
+
+  opacity: 1;
+}
+
+}
+
+@keyframes fadeOut {
+  /* identifier */
+  
+  from {
+  
+    opacity: 1;
+  }
+  
+  to{
+  
+    opacity: 0;
+  }
+  
+  }
+
+  @keyframes move {
+    20%, 100% {
+      opacity: 0;
+      transform: translate(200px,0px);
+    }
+   /* 0% {
+      opacity: 0;
+    }
+     10% {
+      opacity: 1;
+    }*/
+  }
+  
+

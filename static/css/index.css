@@ -125,6 +125,9 @@ border: 1px solid #000000;
 }
 
 /* 접속 알림 */
+
+
+/*
 .connect {
   width: 90%;
   margin: auto;
@@ -134,9 +137,12 @@ border: 1px solid #000000;
   margin-top: 30px;
   animation: fadeOut 15s forwards ;/*linear infinite;*/
   /*animation: move 15s   forwards ;/*ease-in-out;/*infinite*/
+  /*
 }
 
+
 /* 접속 종료 알림 */
+/*
 .disconnect {
   width: 90%;
   margin: auto;
@@ -144,8 +150,12 @@ border: 1px solid #000000;
   text-align: center;
   margin-top: 10px;
   animation: fadeOut 15s forwards ;/*linear infinite;*/
+
   /*animation: move 15s   forwards ;ease-in-out;/*infinite*/
-}
+  /*
+}*/
+
+
 
 /* 내가 보낸 메시지 
 .me {

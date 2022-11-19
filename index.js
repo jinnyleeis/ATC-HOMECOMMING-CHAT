@@ -76,7 +76,7 @@ fs.readFile('./static/index1.html', function(err, data) {
         socket.name = name
     
        //모든 소켓들에게 전송!!
-        io.sockets.emit('update', {type: 'connect',message: name +'님이 입장했습니다.'})
+        //io.sockets.emit('update', {type: 'connect',message: name +'님이 입장했습니다.'})
       })
     
       socket.on("message2",function(data){
@@ -90,7 +90,7 @@ fs.readFile('./static/index1.html', function(err, data) {
           }
           //file written successfully
         })
-        io.sockets.emit('update', data) 
+       // io.sockets.emit('update', data) 
        // socket.broadcast.emit('update', data)//보낸사람 제외 나머지 유저에게 메시지 전송/
        })
 
@@ -110,10 +110,11 @@ fs.readFile('./static/index1.html', function(err, data) {
    })
   
   socket.on("disconnect",function(){console.log(socket.name+"님이 퇴장했습니다")
-  socket.broadcast.emit('update', {type: 'disconnect',  message: socket.name + '님이 퇴장했습니다.'});
+/socket.broadcast.emit('update', {type: 'disconnect',  message: socket.name + '님이 퇴장했습니다.'});
   //나간사람제외 메시지 전송.
 })
-  })
+  }
+  )
 server.listen(8080, function(){
     console.log('hi server now runnig.., listner 실행.')});
 

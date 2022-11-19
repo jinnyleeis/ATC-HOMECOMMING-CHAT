@@ -30,6 +30,9 @@ socket.on('update', function(data) {
   switch(data.type) {
     case 'message':
       className = 'other'
+      message.classList.add(className)
+  message.appendChild(node)
+  chat.appendChild(message)
       break
     case 'connect':
       className = 'connect'
@@ -38,9 +41,9 @@ socket.on('update', function(data) {
       className = 'disconnect'
       break
   }
-  message.classList.add(className)
-  message.appendChild(node)
-  chat.appendChild(message)
+  //message.classList.add(className)
+  //message.appendChild(node)
+  //chat.appendChild(message)
 })
 function send() {
   // 입력되어있는 데이터 가져오기
@@ -50,10 +53,10 @@ function send() {
 
   // 내가 전송할 메시지 클라이언트에게 표시
   var chat = document.getElementById('chat')
-  var content = document.createElement('div')
-  var node = document.createTextNode(message)
+  //var content = document.createElement('div')
+ // var node = document.createTextNode(message)
   //content.classList.add('me')
-  content.appendChild(node)
+ // content.appendChild(node)
   //chat.appendChild(content)
 
   // 서버로 message 이벤트 전달 + 데이터와 함께
@@ -74,10 +77,10 @@ console.log("send2")
 
   // 내가 전송할 메시지 클라이언트에게 표시
   var chat = document.getElementById('chat')
-  var content = document.createElement('div')
-  var node = document.createTextNode(message2)
+  //var content = document.createElement('div')
+  //var node = document.createTextNode(message2)
   //content.classList.add('me')
-  content.appendChild(node)
+ // content.appendChild(node)
   //chat.appendChild(content)
 
   // 서버로 message 이벤트 전달 + 데이터와 함께
